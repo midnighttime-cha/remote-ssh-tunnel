@@ -19,5 +19,16 @@ ssh -f -N -M -S /tmp/sshtunnel -L localhost:[localport]:[APPLICATION ADDRESS]:[P
 ```bash
  ssh -f -N -M -S /tmp/sshtunnel -L localhost:5432:192.168.1.100:5432 root@203.19.202.111
 ```
+
+### Config
+```bash
+nano ~/.ssh/config
+```
+...
+```
+Host *
+    ServerAliveInterval 120
+    TCPKeepAlive no
+```
 make a temp file for ssh tunnel all time.
 
