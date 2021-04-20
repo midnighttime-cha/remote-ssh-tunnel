@@ -13,7 +13,7 @@ ssh -N -L localhost:54321:192.168.1.100:5432 root@203.19.202.111
 - :192.168.1.100 คือ IP ของ DB Server ตามด้วย :5432 เป็น port เริ่มต้นของ PostgreSQL
 - root@203.19.202.111 คือ username ตามด้วย IP ของเครื่องที่ต้องการทะลุ tunnel ไปบางครั้งอาจเป็นคนละเครื่องกับ DB Server แต่เครื่องนั้นอยู่ใน local เดียวกันก็สามารถทำได้
 
-## วิธีที่สอง 2.
+## วิธีที่ 2.
 กรณีที่ต้องการเชื่อมต่อแบบนานๆ
 ```bash
 ssh -f -N -M -S /tmp/sshtunnel -L localhost:[local port]:[host หรือ IP ของ DB]:[DB Port] [username ของเครื่องที่ต้องการ remote]@[host/ip ของเครื่องที่จะ ssh]
