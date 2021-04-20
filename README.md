@@ -1,6 +1,6 @@
 # วิธี เชื่อมต่อ Database ด้วยวิธี remote ผ่าน ssh tunnel ใน MacOS
 
-## วิธีทืี่ 1.
+## วิธีที่ 1.
 ```bash
 ssh -N -L localhost:[local port]:[host หรือ IP ของ DB]:[DB Port] [username ของเครื่องที่ต้องการ remote]@[host/ip ของเครื่องที่จะ ssh]
 ```
