@@ -2,7 +2,7 @@
 
 ## วิธีที่ 1.
 ```bash
-ssh -N -L localhost:[local port]:[host หรือ IP ของ DB]:[DB Port] [username ของเครื่องที่ต้องการ remote]@[host/ip ของเครื่องที่จะ ssh]
+ssh -N -L [local port]:[host หรือ IP ของ DB]:[DB Port] [username ของเครื่องที่ต้องการ remote]@[host/ip ของเครื่องที่จะ ssh]
 ```
 
 ### ตัวอย่างการเชื่อมต่อ PostgreSQL
@@ -16,7 +16,7 @@ ssh -N -L localhost:54321:192.168.1.100:5432 root@203.19.202.111
 ## วิธีที่ 2.
 กรณีที่ต้องการเชื่อมต่อแบบนานๆ
 ```bash
-ssh -f -N -M -S /tmp/sshtunnel -L localhost:[local port]:[host หรือ IP ของ DB]:[DB Port] [username ของเครื่องที่ต้องการ remote]@[host/ip ของเครื่องที่จะ ssh]
+ssh -f -N -M -S /tmp/sshtunnel -L [local port]:[host หรือ IP ของ DB]:[DB Port] [username ของเครื่องที่ต้องการ remote]@[host/ip ของเครื่องที่จะ ssh]
 ```
 
 ### ตัวอย่างการเชื่อมต่อ
